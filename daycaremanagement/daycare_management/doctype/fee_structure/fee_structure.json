@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-25 11:50:20.765910",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "care_hours",
+  "age_group",
+  "pre_school_2_to_4_years",
+  "age_group_of_4_to_12_yeaars"
+ ],
+ "fields": [
+  {
+   "fieldname": "care_hours",
+   "fieldtype": "Select",
+   "label": "Care Hours",
+   "options": "1 Hour\nHalf-a-day(9:00AM-12:30PM)\nFull Day(9:00AM-4:00PM)\nExtended Hours (Beyond 4:00 PM)"
+  },
+  {
+   "fieldname": "age_group",
+   "fieldtype": "Data",
+   "label": "Infant (below 2 years)"
+  },
+  {
+   "fieldname": "pre_school_2_to_4_years",
+   "fieldtype": "Data",
+   "label": "Pre School (2 to 4 years)"
+  },
+  {
+   "fieldname": "age_group_of_4_to_12_yeaars",
+   "fieldtype": "Data",
+   "label": "Age group of 4 to 12 yeaars"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-27 08:32:29.280145",
+ "modified_by": "Administrator",
+ "module": "DayCare Management",
+ "name": "Fee Structure",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

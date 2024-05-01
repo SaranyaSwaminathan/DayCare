@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CH - {####}",
+ "creation": "2024-04-22 22:47:50.316053",
+ "default_view": "Image",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "personal_section",
+  "full_name",
+  "date_of_birth",
+  "mother_tongue",
+  "address",
+  "column_break_cyxg",
+  "photograph",
+  "fathers_name",
+  "mothers_name",
+  "name_of_the_guardian",
+  "emergency_contact_other_than_parentsguardian",
+  "section_break_osbs",
+  "blood_group",
+  "health_issues_if_any",
+  "medications",
+  "payment_details_section",
+  "care_hours",
+  "age_group",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "personal_section",
+   "fieldtype": "Section Break",
+   "label": "Personal"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mother_tongue",
+   "fieldtype": "Data",
+   "label": "Mother Tongue"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_cyxg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fathers_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Father's Name",
+   "options": "Contact Detail",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mothers_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Mother's Name",
+   "options": "Contact Detail",
+   "reqd": 1
+  },
+  {
+   "fieldname": "name_of_the_guardian",
+   "fieldtype": "Link",
+   "label": "Name of the Guardian",
+   "options": "Contact Detail"
+  },
+  {
+   "fieldname": "emergency_contact_other_than_parentsguardian",
+   "fieldtype": "Link",
+   "label": "Emergency Contact (other than parents/guardian)",
+   "options": "Contact Detail",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_osbs",
+   "fieldtype": "Section Break",
+   "label": "Health"
+  },
+  {
+   "fieldname": "photograph",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Photograph"
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "label": "Blood Group",
+   "options": "A+\nA-\nB+\nB-\nO+\nO-\nAB+\nAB-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "health_issues_if_any",
+   "fieldtype": "Data",
+   "label": "Health Issues if any"
+  },
+  {
+   "fieldname": "medications",
+   "fieldtype": "Data",
+   "label": "Medications"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "payment_details_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "care_hours",
+   "fieldtype": "Select",
+   "label": "Care Hours",
+   "options": "1 Hour\nHalf a day"
+  },
+  {
+   "fieldname": "age_group",
+   "fieldtype": "Select",
+   "label": "Age Group",
+   "options": "< 2\n2 to 4\n4 to 12"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  }
+ ],
+ "image_field": "photograph",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-30 16:41:31.424710",
+ "modified_by": "Administrator",
+ "module": "DayCare Management",
+ "name": "Children Detail",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name",
+ "track_changes": 1
+}

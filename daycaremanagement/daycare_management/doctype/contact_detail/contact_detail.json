@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CON - {####}",
+ "creation": "2024-04-22 23:19:57.073606",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "photograph",
+  "section_break_qpdw",
+  "first_name",
+  "role",
+  "phone_number",
+  "column_break_ndzb",
+  "address",
+  "email",
+  "blood_group",
+  "parent_details_section",
+  "relationship",
+  "occupation",
+  "office_address",
+  "work_phone_number",
+  "staff_details_section",
+  "date_of_joining",
+  "salary"
+ ],
+ "fields": [
+  {
+   "fieldname": "photograph",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Photograph"
+  },
+  {
+   "fieldname": "section_break_qpdw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Select",
+   "label": "Role",
+   "options": "Parent\nGuardian\nEmergency Contact\nTeacher\nCare-Taker\nHelper\nMedical Assistant\nSecurity\nCook",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ndzb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "label": "Blood Group",
+   "options": "A+\nA-\nB+\nB-\nO+\nO-\nAB+\nAB-"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.role==\"Parent\"\neval:doc.role==\"Guardian\"",
+   "fieldname": "parent_details_section",
+   "fieldtype": "Section Break",
+   "label": "Parent Details"
+  },
+  {
+   "fieldname": "relationship",
+   "fieldtype": "Link",
+   "label": "Relationship",
+   "options": "Relationship"
+  },
+  {
+   "fieldname": "occupation",
+   "fieldtype": "Data",
+   "label": "Occupation"
+  },
+  {
+   "fieldname": "office_address",
+   "fieldtype": "Data",
+   "label": "Work Address"
+  },
+  {
+   "fieldname": "work_phone_number",
+   "fieldtype": "Phone",
+   "label": "Work Phone Number"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "staff_details_section",
+   "fieldtype": "Section Break",
+   "label": "Staff Details"
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining"
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Currency",
+   "label": "Salary"
+  }
+ ],
+ "image_field": "photograph",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-27 11:09:15.238503",
+ "modified_by": "Administrator",
+ "module": "DayCare Management",
+ "name": "Contact Detail",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "first_name"
+}

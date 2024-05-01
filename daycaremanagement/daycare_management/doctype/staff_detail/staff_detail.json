@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ST - {####}",
+ "creation": "2024-04-23 11:16:01.969904",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_bngj",
+  "photograph",
+  "section_break_hdyq",
+  "full_name",
+  "phone_number",
+  "address",
+  "column_break_spya",
+  "role",
+  "salary"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_bngj",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "photograph",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Photograph"
+  },
+  {
+   "fieldname": "section_break_hdyq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_spya",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Role",
+   "options": "Teacher\nCare-Taker\nHelper\nSecurity\nMedical Assistant\nCook",
+   "reqd": 1
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Currency",
+   "label": "Salary",
+   "precision": "1"
+  }
+ ],
+ "image_field": "photograph",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-27 08:34:20.541399",
+ "modified_by": "Administrator",
+ "module": "DayCare Management",
+ "name": "Staff Detail",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name",
+ "track_changes": 1
+}

@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-25 10:47:56.812781",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "relationship_with_the_child_section",
+  "select_sgzf"
+ ],
+ "fields": [
+  {
+   "fieldname": "relationship_with_the_child_section",
+   "fieldtype": "Section Break",
+   "label": "Relationship with the Child"
+  },
+  {
+   "fieldname": "select_sgzf",
+   "fieldtype": "Data"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-27 08:32:48.895410",
+ "modified_by": "Administrator",
+ "module": "DayCare Management",
+ "name": "Relationship",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "select_sgzf"
+}

@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2024-04-25 18:27:57.318787",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "fee_structure_section",
+  "table_bifi"
+ ],
+ "fields": [
+  {
+   "fieldname": "fee_structure_section",
+   "fieldtype": "Section Break",
+   "label": "Fee structure"
+  },
+  {
+   "fieldname": "table_bifi",
+   "fieldtype": "Table",
+   "label": "Monthly Fees (in Rs.)",
+   "options": "Fee Structure",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2024-04-30 10:06:15.743208",
+ "modified_by": "Administrator",
+ "module": "DayCare Management",
+ "name": "Fee",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
