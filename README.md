@@ -4,4 +4,4 @@ Daycare Management
 
 #### License
 
-mit
+mit# DayCare
